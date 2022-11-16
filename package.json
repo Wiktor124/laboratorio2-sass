@@ -1,0 +1,21 @@
+{
+  "name": "laboratorio2-sass",
+  "version": "1.0.0",
+  "description": "hola mundo",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch public/sass:public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiktor124/laboratorio2-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiktor124/laboratorio2-sass/issues"
+  },
+  "homepage": "https://github.com/Wiktor124/laboratorio2-sass#readme"
+}
