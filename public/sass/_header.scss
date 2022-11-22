@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  position: relative;
+
+  &__ol {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__ol + &__ol {
+    gap: 20px;
+  }
+
+  .drop {
+    position: relative;
+    display: block;
+    z-index: 10;
+    &__ul a {
+     display: block;
+     padding: 10px 0;
+     cursor: pointer;
+    }
+
+    &__ul a:hover {
+      background-color: $orange;
+      color: $white !important;
+    }
+
+    &__ul {
+      position: absolute;
+      top: 100%;
+      width: 90px;
+      left: 0;
+      display: none;
+
+      background-color: $white;
+    }
+    
+  }
+
+  .drop:hover .drop__ul{
+    display: block;
+  }
+
+  
+  &__link:first-child  > a {
+    color: $orange;
+  }
+
+  &__link:first-child a:hover {
+    color: $black;
+    svg {
+      filter: brightness(0) saturate(100%) invert(18%) sepia(5%) saturate(24%)
+        hue-rotate(32deg) brightness(94%) contrast(95%);
+    }
+  }
+
+  &__link a {
+    color: $black;
+    font-weight: bold;
+  }
+
+  &__link svg {
+    position: relative;
+    top: 5px;
+  }
+}

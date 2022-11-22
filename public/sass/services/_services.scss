@@ -1,0 +1,73 @@
+.section-left {
+  &--50 {
+    display: flex;
+    gap: 4px;
+    div {
+      width: 50%;
+    }
+  }
+}
+
+// Discount offe
+.discount {
+  background: url(../assets/img/services/purple-background.png) no-repeat center;
+  background-size: cover;
+  padding: 100px 0;
+  display: flex;
+  
+  .container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 150px;
+    max-width: 910px;
+    margin: 0 auto;
+  }
+
+  &__text1 {
+    flex-basis: 583px;
+
+    * {
+      color: $white;
+    }
+
+    span {
+      font-weight: bold;
+      color: $orange;
+    }
+
+    span,
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  &__text1 + div {
+    display: flex;
+    align-items: center;
+    
+    span {
+      font-size: 4rem;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+}
+
+// You sit. We move
+.you-sit {
+  background: none;
+
+  .container {
+    background: none;
+  }
+  .section-right__container  { margin-bottom: 40px;}
+  .section-left__container, .section-right__container {
+    padding: 0;
+  }
+  .section-left--50 {
+    gap: 0;
+  }
+}
+
+

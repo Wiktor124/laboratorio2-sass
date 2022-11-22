@@ -1,0 +1,111 @@
+// Quick massage
+.quick-massage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__img {
+    flex-basis: 570px;
+  }
+
+  &__text {
+    flex-basis: 430px;
+
+    h1,
+    span {
+      font-size: 3rem;
+    }
+
+    span {
+      color: $orange;
+    }
+
+    h1 + div {
+      margin-top: 7.6875em;
+    }
+  }
+
+  &__background {
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(
+      to left,
+      $light-orange 0%,
+      $light-orange 50%,
+      $transparent 50%
+    );
+
+    width: 100%;
+    top: 0;
+
+    .container {
+      min-height: 42.875rem;
+      border-bottom-left-radius: 200px;
+      background-color: $light-orange;
+    }
+
+
+  }
+
+  &__background-img {
+    z-index: -1;
+    position: absolute;
+    background: url(./../assets/img/home/background-massage.png) no-repeat right;
+    background-size: cover;
+    width: 50%;
+    min-height: 31.25rem;
+    border-bottom-right-radius: 200px;
+
+  }
+}
+
+// Pricing
+.time {
+  text-align: center;
+
+  &__container {
+    margin-bottom: 40px;
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__div {
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+
+    p {
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: $black;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    p + span {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// section with grey background rigth
+// Widen your smile.
+.section-right {
+  &__img-widen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img-widen div {
+    width: 50%;
+  }
+}

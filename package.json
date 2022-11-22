@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Wiktor124/laboratorio2-sass/issues"
   },
-  "homepage": "https://github.com/Wiktor124/laboratorio2-sass#readme"
+  "homepage": "https://github.com/Wiktor124/laboratorio2-sass#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }

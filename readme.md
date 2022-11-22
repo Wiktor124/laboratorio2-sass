@@ -1,2 +1,3 @@
 # **to run this proyect use the next command**
-npm run sass
+1. npm i sass
+2. npm run sass

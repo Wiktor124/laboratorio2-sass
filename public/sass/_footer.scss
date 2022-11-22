@@ -1,0 +1,38 @@
+.footer {
+  background-color: $black;
+  padding: 3.75em 0 1.25em;
+  
+  .link li { margin-bottom: 23px; }
+  
+  .link li:first-child{ margin-bottom: 40px; }
+
+  .link li:first-child a { color: $orange; }
+  
+  .link a {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: $white;
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(22%) saturate(2%)
+      hue-rotate(56deg) brightness(112%) contrast(100%); /*#fff*/
+  }
+
+  .container div:first-child { margin-bottom: 73px; }
+
+  .networks { gap: 15px; }
+
+  .contact img {
+    width: 1em;
+    margin-right: 10px;
+  }
+
+  span { color: $white; }
+}

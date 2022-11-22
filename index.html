@@ -1,13 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratorio2-sass</title>
+  <title>Home - (Laboratorio2-sass)</title>
   <link rel="stylesheet" href="public/css/style.css">
 </head>
+
 <body>
-  
+  <!-- Header -->
+  <header>
+    <nav class="nav container">
+      <a href="#"><img src="public/assets/logo.svg" alt="Logo millious" class="logo"></a>
+
+      <ol class="nav__ol">
+        <li class="nav__link drop">
+          <a href="#">Home <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 7.125L10 11.875L14.75 7.125" stroke="#E27D60" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="nav__icon" />
+            </svg>
+          </a>
+          <ul class="drop__ul">
+            <li><a href="pages/about.html">About us</a></li>
+            <li><a href="pages/article.html">Article</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/our.html">Our Team</a></li>
+            <li><a href="pages/product.html">Product</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__link">
+          <a href="#">Booking<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 7.125L10 11.875L14.75 7.125" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="nav__icon" />
+            </svg>
+          </a>
+        </li>
+
+        <li class="nav__link">
+          <a href="#">Shop<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 7.125L10 11.875L14.75 7.125" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+
+        <li class="nav__link">
+          <a href="#">Blog<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 7.125L10 11.875L14.75 7.125" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+
+        <li class="nav__link">
+          <a href="#">Features<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 7.125L10 11.875L14.75 7.125" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+      </ol>
+
+      <ol class="nav__ol">
+        <li>
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#303030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L16.65 16.65" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_406_440)">
+                <path
+                  d="M4.28571 2H18.4286C19.1106 2 19.7646 2.25754 20.2468 2.71596C20.7291 3.17438 21 3.79614 21 4.44444V19.1111C21 19.7594 20.7291 20.3812 20.2468 20.8396C19.7646 21.298 19.1106 21.5556 18.4286 21.5556H4.28571C3.94472 21.5556 3.6177 21.4268 3.37658 21.1976C3.13546 20.9684 3 20.6575 3 20.3333V3.22222C3 2.89807 3.13546 2.58719 3.37658 2.35798C3.6177 2.12877 3.94472 2 4.28571 2M8.14286 2V24M13.2857 6.88889H15.8571M13.2857 11.7778H15.8571"
+                  stroke="#303030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_406_440">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                stroke="#303030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                stroke="#303030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                stroke="#303030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- quick massage -->
+  <section class="quick-massage">
+    <div class="margin-bottom">
+
+      <div class="container quick-massage__container ">
+        <div class="quick-massage__img"></div>
+        <div class="quick-massage__text">
+          <h1>There is nothing better than a <span>quick massage.</span></h1>
+          <div><a href="#" class="btn">Book an appointment</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="quick-massage__background">
+      <div class=" container"></div>
+    </div>
+    <div class="quick-massage__background-img"></div>
+    <div class="slide">
+      <img src="public/assets/img/comments/pages.png" alt="">
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="container margin-bottom cards">
+    <ul class="cards__ul">
+
+      <li>
+        <div class="cards__img cards__img1"></div>
+        <h3>Deep Tissue</h3>
+        <p>
+          Lorem ipsum dolor amet, consect risu adipiscing elit do
+        </p>
+      </li>
+
+      <li>
+        <div class="cards__img cards__img2"></div>
+        <h3>Wellness</h3>
+        <p>Lorem ipsum dolor amet, consect risu adipiscing elit do</p>
+      </li>
+
+      <li>
+        <div class="cards__img cards__img3"></div>
+        <h3>Refloxology</h3>
+        <p>Lorem ipsum dolor amet, consect risu adipiscing elit do</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- section with grey background left-->
+  <!-- Give us a visit -->
+  <section class="margin-bottom section-left">
+    <div class="container section-left__container ">
+
+      <div class="section-left__text">
+        <span>WE SEE THE RESULTS.</span>
+        <h2>Give us a visit.</h2>
+        <p>
+          Ut donec suscipit nunc volutpat faucibus. Ut penatibus etiam diam facilisi at nibh nulla auctor lorem.
+          Accumsan vulputate euismod massa sit egestas. Aliquet a scelerisque enim, arcu rutrum adipiscing fringilla
+          risus. Ullamcorper consequat donec euismod mi pulvinar.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="section-left__img">
+        <img src="public/assets/img/home/give-us-visit.png" alt="Massage image">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="margin-bottom time">
+
+    <div class="container">
+      <span>PRICING</span>
+      <h2>It’s worth the time.</h2>
+      <div class="time__container time--flex">
+
+        <div class="time__div">
+          <p>
+            Full Massage....................................................................<span>$25.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+          <p>Sauna
+            Relax....................................................................<span>$40.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+          <p>
+            Rehabilitation....................................................................<span>$30.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+
+        </div>
+
+        <div class="time__div">
+
+          <p>Scrub
+            Procedure....................................................................<span>$65.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+          <p>
+            Aromatherapyv....................................................................<span>$60.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+          <p>Head
+            Massage.....................................................................<span>$30.00</span>
+          </p>
+          <span>Adipiscing fames eu enim feugiat egestas</span>
+
+        </div>
+      </div>
+      <a class="btn" href="#">View More</a>
+    </div>
+
+  </section>
+
+  <!-- section with grey background rigth-->
+  <!-- We see all results -->
+  <section class="margin-bottom section-right">
+    <div class="container section-right__container ">
+
+      <div class="section-right__img section-right__img-widen">
+        <div><img src="public/assets/img/home/widen-oil.png" alt="Image"></div>
+        <div><img src="public/assets/img/home/widen-toilet.png" alt="Image"></div>
+      </div>
+
+      <div class="section-right__text">
+        <span>WE SEE THE RESULTS.</span>
+        <h2>Give us a visit.</h2>
+        <p>
+          Ut donec suscipit nunc volutpat faucibus. Ut penatibus etiam diam facilisi at nibh nulla auctor lorem.
+          Accumsan vulputate euismod massa sit egestas. Aliquet a scelerisque enim, arcu rutrum adipiscing fringilla
+          risus. Ullamcorper consequat donec euismod mi pulvinar.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Treatments -->
+  <section class="container margin-bottom treatments">
+    <span>TREANTMENTS</span>
+    <h2>Your key to a relaxed life.</h2>
+
+    <div class="treatments__img">
+      <div><img src="public/assets/img/relax2.png" alt=""></div>
+      <div><img src="public/assets/img/aromatherapy.png" alt=""></div>
+      <div><img src="public/assets/img/rehabillitation.png" alt=""></div>
+      <div><img src="public/assets/img/manicure.png" alt=""></div>
+    </div>
+  </section>
+
+  <!-- Masters -->
+  <section class="margin-bottom container">
+    <div class="masters__text">
+      <span>OUR TEAM</span>
+      <h2>Masters of massage.</h2>
+      <p>
+        Tempor etiam ipsum pellentesque eget pretium consectetur pellentesque ultrices sagittis. Elit ut ultricies donec
+        a
+        at odio ultricies tellus.
+      </p>
+    </div>
+
+    <div class="masters__images--container">
+      <ul class="masters--flex masters__ul">
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/james.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>James Perico</h3>
+          <p>head doctor</p>
+        </li>
+
+        <li>
+          <div class="masters--flex masters__image">
+            <img src="public/assets/img/masters/victoria.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Victoria Diaz</h3>
+          <p>Massage Therapist</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/umar.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Umar Hadi</h3>
+          <p>Phisiologhist</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/melissa.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Melissa Walter</h3>
+          <p>Therapist</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/bob.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Bob Ventura</h3>
+          <p>Cardiotherapist</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/george.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>George Warren</h3>
+          <p>Head Doctor</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/mark.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Mark Kruger</h3>
+          <p>head doctor</p>
+        </li>
+
+        <li>
+          <div class="masters__image">
+            <img src="public/assets/img/masters/malcolm.png" alt="">
+            <div class="masters--flex masters__redes">
+              <img src="public/assets/img/masters/facebook.svg" alt="">
+              <img src="public/assets/img/masters/twitter.svg" alt="">
+              <img src="public/assets/img/masters/instagram.svg" alt="">
+            </div>
+          </div>
+          <h3>Malcolm Daniels</h3>
+          <p>head doctor</p>
+        </li>
+      </ul>
+
+      <div class="masters__button"><a href="#" class="btn">Show More</a></div>
+
+    </div>
+  </section>
+
+  <!-- Our Reviews -->
+  <section class="margin-bottom our">
+    <div class="container our__container">
+      <div class="section-left__container">
+
+        <div class="section-left__text">
+          <span>OUR REVIEWS</span>
+          <h2>Everyone deserves good health.</h2>
+          <p>
+            Aliquet a scelerisque enim, arcu rutrum adipiscing fringilla risus. Eget fringilla curabitur sed vulputate
+            pretium, habitasse amet. Elementum odio sagittis, interdum elit ipsum. Volutpat erat ac eu aliquam turpis.
+            Ullamcorper consequat donec euismod mi pulvinar. </p>
+        </div>
+
+        <div class="section-left__img">
+          <img src="public/assets/img/health.png" alt="">
+        </div>
+
+      </div>
+
+      <ul class="comments">
+        <li>
+          <article>
+            <div class="comments__text">
+              <p>“Eu dolor at venenatis aliquam velit et in consequat. Nam dui pulvinar consequat eleifend malesuada. Eu
+                dolor at venenatis aliquam velit et in consequat”</p>
+            </div>
+            <footer class="comments__footer">
+              <div class="comments__image"><img src="public/assets/img/comments/jessica.png" alt=""></div>
+              <div class="comment_information">
+                <h4>Jessica Mortyr</h4>
+                <span>United Kingdom</span>
+              </div>
+            </footer>
+          </article>
+        </li>
+
+
+        <li>
+          <article>
+            <div class="comments__text">
+              <p>“Eu dolor at venenatis aliquam velit et in consequat. Nam dui pulvinar consequat eleifend malesuada. Eu
+                dolor at venenatis aliquam velit et in consequat”</p>
+            </div>
+            <footer class="comments__footer">
+              <div class="comments__image"><img src="public/assets/img/comments/valeri.png" alt=""></div>
+              <div class="comment_information">
+                <h4>Valeri</h4>
+                <span>United States</span>
+              </div>
+            </footer>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <div class="comments__text">
+              <p>“Eu dolor at venenatis aliquam velit et in consequat. Nam dui pulvinar consequat eleifend malesuada. Eu
+                dolor at venenatis aliquam velit et in consequat”</p>
+            </div>
+            <footer class="comments__footer">
+              <div class="comments__image"><img src="public/assets/img/comments/christine.png" alt=""></div>
+              <div class="comment_information">
+                <h4>Christine Karr</h4>
+                <span>Wales</span>
+              </div>
+            </footer>
+          </article>
+        </li>
+      </ul>
+
+      <div class="slide">
+        <img src="public/assets/img/comments/pages.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section class="container margin-bottom shop">
+    <div class="shop__text">
+      <span>OUR TEAM</span>
+      <h2>Masters of massage.</h2>
+      <p>
+        Tempor etiam ipsum pellentesque eget pretium consectetur pellentesque ultrices sagittis. Elit ut ultricies donec
+        a
+        at odio ultricies tellus.
+      </p>
+    </div>
+    <ul class="shop__ul">
+      <li>
+        <img src="public/assets/img/products/massage-oil.png" alt="">
+        <span>Massage / Oil</span>
+        <p>Massage Oil</p>
+        <span>$34.66</span>
+      </li>
+      <li>
+        <img src="public/assets/img/products/c.png" alt="">
+        <span>Massage / Oil</span>
+        <p>c</p>
+        <span>$10.89</span>
+      </li>
+      <li>
+        <img src="public/assets/img/products/cc-cream.png" alt="">
+        <span>Face / Cream</span>
+        <p>CC Cream</p>
+        <span>$11.99</span>
+      </li>
+      <li>
+        <img src="public/assets/img/products/anti-cellulite.png" alt="">
+        <span>Massage / Oil</span>
+        <p>Anti-Cellulite Oil</p>
+        <span>$48.80</span>
+      </li>
+    </ul>
+
+    <div class="slide">
+      <img src="public/assets/img/comments/pages.png" alt="">
+    </div>
+
+  </section>
+
+  <!-- Brands -->
+  <section class="brands container margin-bottom">
+    <ul class="brands__ul">
+      <li><img src="public/assets/icons/change.svg" alt=""></li>
+      <li><img src="public/assets/icons/blue.svg" alt=""></li>
+      <li><img src="public/assets/icons/hilroy.svg" alt=""></li>
+      <li><img src="public/assets/icons/mafia.svg" alt=""></li>
+    </ul>
+  </section>
+
+  <!-- blog -->
+  <section class="blog container margin-bottom">
+    <span>BLOG</span>
+    <h2>Latest ne ws.</h2>
+
+    <ul class="blog__ul">
+      <li>
+        <img src="public/assets/img/home/beauty.png" alt="Beauty image">
+        <div>
+          <span>July 17, 2021</span>
+          <h3>Your head and heart matter.</h3>
+          <a href="#">Read More</a>
+        </div>
+      </li>
+      <li>
+        <img src="public/assets/img/home/massage.png" alt="Massage image">
+        <div>
+          <span>July 12, 2021</span>
+          <h3>From unbalanced to balance.</h3>
+          <a href="#">Read More</a>
+        </div>
+      </li>
+      <li>
+        <img src="public/assets/img/home/healthcare.png" alt="Healthcare image">
+        <div>
+          <span>July 9, 2021</span>
+          <h3>Get the desired health.</h3>
+          <a href="#">Read More</a>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+  <!-- Join -->
+  <section class="join">
+    <div class="container join__container">
+      <div class="join__text">
+        <span>Subscribe</span>
+        <h2>Join our newssellers.</h2>
+        <p>
+          Subcribe to our newsseller and <span class="get-45">get 45% discount</span> for your next appointment.
+        </p>
+      </div>
+
+      <div>
+        <form action="">
+          <div class="join__form">
+            <label for="email2" class="sr-only">email</label>
+            <input type="email" name="" id="email2" placeholder="Enter your E-mail">
+            <input type="submit" value="Suscribe" class="btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer--flex">
+        <img src="public/assets/logo.svg" alt="Logo millious" class="logo footer__logo">
+        <ul class="networks footer--flex">
+          <li><img src="public/assets/icons/footer/facebook.svg" alt=""></li>
+          <li><img src="public/assets/icons/footer/viva.svg" alt=""></li>
+          <li><img src="public/assets/icons/footer/instagram.svg" alt=""></li>
+          <li><img src="public/assets/icons/footer/twitter.svg" alt=""></li>
+        </ul>
+
+        <ul class="information link">
+          <li><a href="#">Information</a></li>
+          <li><a href="#">About Millious</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <ul class="links link">
+          <li><a href="#">Quick Links</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Booking</a></li>
+        </ul>
+
+        <ul class="contact link">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#"><img src="public/assets/icons/footer/location.svg" alt=""> 176 W Street, New York, NY
+              10014</a></li>
+          <li><a href="#"><img src="public/assets/icons/footer/phone.svg" alt=""> +1(565)231-5645</a></li>
+          <li><a href="#"><img src="public/assets/icons/footer/email.svg" alt=""> millious@example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer--flex">
+        <span>&copy; Millious 2022</span>
+        <span>All right reserved</span>
+      </div>
+
+    </div>
+  </footer>
 </body>
+
 </html>
