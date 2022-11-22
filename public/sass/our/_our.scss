@@ -1,0 +1,69 @@
+/* ask us something */
+.background__ask--us {
+    background: url(../assets/img/our/background.png) no-repeat center;
+    background-size: cover;
+}
+
+.ask__container {
+    display: flex;
+    gap: 100px;
+    padding: 100px 0;
+
+}
+
+.ask__text--container {
+    margin-top: 35px;
+    flex-basis: 600px;
+}
+
+.ask__text {
+    font-size: 1rem;
+}
+
+.ask__text--container>* {
+    color: #fff;
+}
+
+.ask__form--container {
+    background-color: #fff;
+    padding: 1.875em;
+    border-radius: 3px;
+    flex-basis: 370px;
+}
+
+.ask__form--title {
+    color: #292929;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.ask__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ask__form input {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 2px solid #e6e6e6;
+}
+
+.ask__form input::placeholder {
+    color: #e6e6e6;
+    font-size: 1rem;
+}
+
+.ask__form--container p {
+    max-width: 280px;
+    padding-left: 1.25rem;
+    font-size: 0.75rem;
+    background: url(../assets/img/our/check.svg) no-repeat;
+    margin: 10px 0 40px 0;
+}
+
+.company {
+    color: #e27d60;
+}

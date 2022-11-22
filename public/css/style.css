@@ -719,4 +719,297 @@ img {
   gap: 0;
 }
 
+/* ask us something */
+.background__ask--us {
+  background: url(../assets/img/our/background.png) no-repeat center;
+  background-size: cover;
+}
+
+.ask__container {
+  display: flex;
+  gap: 100px;
+  padding: 100px 0;
+}
+
+.ask__text--container {
+  margin-top: 35px;
+  flex-basis: 600px;
+}
+
+.ask__text {
+  font-size: 1rem;
+}
+
+.ask__text--container > * {
+  color: #fff;
+}
+
+.ask__form--container {
+  background-color: #fff;
+  padding: 1.875em;
+  border-radius: 3px;
+  flex-basis: 370px;
+}
+
+.ask__form--title {
+  color: #292929;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.ask__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ask__form input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 2px solid #e6e6e6;
+}
+
+.ask__form input::placeholder {
+  color: #e6e6e6;
+  font-size: 1rem;
+}
+
+.ask__form--container p {
+  max-width: 280px;
+  padding-left: 1.25rem;
+  font-size: 0.75rem;
+  background: url(../assets/img/our/check.svg) no-repeat;
+  margin: 10px 0 40px 0;
+}
+
+.company {
+  color: #e27d60;
+}
+
+.junto {
+  display: flex;
+}
+
+.parrafo p {
+  text-align: left;
+  font-size: 1.125rem;
+}
+
+.parrafop {
+  font-size: 18px;
+}
+
+.img-center :nth-child(1) {
+  margin-left: 230px;
+}
+
+.comment {
+  max-width: 770px;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.text {
+  background-color: #e8a87c;
+  padding: 30px 100px;
+  width: 500px;
+  height: 115px;
+  border: 1px solid #FAEEE5;
+  background-color: #FAEEE5;
+  text-align: center;
+  size: 18px;
+}
+
+.cuerpo {
+  width: fit-content;
+  display: flex;
+  font-size: 14px;
+}
+
+.cuerpo__img {
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.cuerpo__img + div h3 {
+  font-size: 0.875rem;
+  margin: 0.375rem 0;
+}
+
+.cuerpo__img + div p {
+  font-size: 0.75rem;
+}
+
+.info0 {
+  text-align: center;
+  margin: 41px 0 94px;
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+.info article {
+  flex-basis: 370px;
+  height: fit-content;
+  border: 2px #E6E6E6 solid;
+}
+
+.info__article {
+  padding: 1.25rem 1.875rem 1.875rem;
+}
+
+.box p {
+  font-size: 14px;
+  color: #303030;
+}
+
+.box a {
+  text-decoration: underline black;
+  font-weight: 10px;
+}
+
+.gray {
+  font-size: 10px;
+  color: rgb(173, 170, 170);
+}
+
+.margin__bottom {
+  margin-bottom: 100px !important;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.background_nav {
+  background-color: #e27c60;
+}
+
+.setting-li {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  height: 77px;
+}
+
+.setting-li > li > a {
+  letter-spacing: 2px;
+  color: white;
+}
+
+.change:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.setting-li img {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.main_hambur {
+  align-self: center;
+}
+
+.espacio > img {
+  margin-bottom: 30px;
+}
+
+.setting_info {
+  margin-left: 65px;
+}
+
+.setting_info > h3 {
+  color: black;
+  margin-top: 0px;
+}
+
+.setting_p {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.btn_orange {
+  background-color: #e27c60;
+  color: #e6e6e6;
+  padding: 6px 22px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.setting_espacio {
+  margin: 22px 0px;
+}
+
+.setting_ul {
+  list-style: disc;
+  padding-left: 35px;
+  margin-bottom: 40px;
+}
+
+.setting_caja {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.btn_black {
+  background-color: black;
+  color: #e6e6e6;
+  padding: 6px 190px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.ul_texto {
+  list-style: disc;
+  padding-left: 35px;
+  font-size: 18px;
+}
+
+.setting_section {
+  margin-top: 50px;
+}
+
+.border_text {
+  border: 2px solid #E6E6E6;
+  padding: 30px 50px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.box_comments {
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.box_comments p:nth-child(1) {
+  font-weight: bold;
+  color: #e27c60;
+}
+
+.setting_cremas p {
+  font-size: 12px;
+}
+
+.setting_cremas h4 {
+  font-size: 20px;
+}
+
+.setting_cremas span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
